@@ -25,6 +25,7 @@ The problem was explored in the following steps:
   * **data-preparation.ipynb**: Data cleaning and feature engineering
   * **modelling.ipynb**: Pipeline construction and model creation
   * **approval-app.py**: Python file with Flask app script for deployment
+* **working-files:** Project files in progress
 <br />
 <br />
 
