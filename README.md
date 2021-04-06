@@ -22,7 +22,7 @@ The problem was explored in the following steps:
 ### Directories
 * **final-files:** The final project files.
   * **data-exploration.ipynb**: Exploration and visualization of the dataset
-  * **data-preparation.ipynb**: Data cleaning and feature engineering
+  * **data-preparation.ipynb**: Building a data cleaning and feature engineering processs
   * **modelling.ipynb**: Pipeline construction and model creation
   * **approval_app.py**: Python file with Flask app script for deployment
 * **working-files:** Project files in progress
