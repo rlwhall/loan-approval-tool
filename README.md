@@ -15,7 +15,7 @@ The problem was explored in the following steps:
 3. Data Cleaning – imputing missing values in the data and checking for outliers
 4. Feature Engineering – modifying existing variables and creating new ones for analysis
 5. Model Building – making predictive models on the data
-6. Deployment - building a Flask API, and deploying both localling and to the Cloud (AWS)
+6. Deployment - building a Flask API, and deploying both locally and to the Cloud (AWS)
 <br />
 <br>
 
@@ -25,7 +25,6 @@ The problem was explored in the following steps:
   * **data-preparation.ipynb**: Building a data cleaning and feature engineering processs
   * **modelling.ipynb**: Pipeline construction and model creation
   * **approval_app.py**: Python file with Flask app script for deployment
-* **working-files:** Project files in progress
 <br />
 <br />
 

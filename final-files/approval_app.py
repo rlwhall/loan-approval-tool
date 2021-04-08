@@ -26,6 +26,10 @@ class ToDenseTransformer():
     def fit(self, X, y=None, **fit_params):
         return self
 
+def cr_obj(data):
+    data['Credit_History'] = data.Credit_History.astype('object')
+    return data
+    
 def numFeat(data):
     num_feats = data.select_dtypes(['int','float']).columns.tolist()
     return data[num_feats]
@@ -51,7 +55,7 @@ dtypes={'Gender': object, 'Married': object, 'Dependents': object,
        'LoanAmount': float, 'Loan_Amount_Term': float, 'Credit_History': float, 'Property_Area': object}
 
 # load model
-model = pickle.load(open('model_3', 'rb'))
+model = pickle.load(open('loan_prediction_model.sav', 'rb'))
 
 # create endpoint for predict
 class Predict(Resource):
@@ -63,7 +67,7 @@ class Predict(Resource):
         # it is much simpler because we used pipelines during development
         res = model.predict_proba(df)
         loan_status = model.predict(df)
-        # we cannot send numpt array as a result
+        # we cannot send numpy array as a result, so return list
         return loan_status.tolist() 
 
 # assign endpoint
